@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap');
+
+*{
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body{
+    background-color: grey;
+    font-family: 'Bonheur Royale', cursive;
+}
+.heading{
+    font-size: 8rem;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-thickness: 6px;
+    text-underline-offset:40px ;
+    margin-bottom: 50px;
+}
+.pics{
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+}
+#image1{
+    background-image: url('image1.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 230px;
+    width: 340px;
+    margin: 2px;
+    margin-right: 20px;
+}
+#image2{
+    background-image: url('image2.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 230px;
+    width: 340px;
+    margin: 2px;
+    margin-right: 20px;
+}
+#image3{
+    background-image: url('image3.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 230px;
+    width: 340px;
+    margin: 2px;
+    margin-right: 20px;
+}
+#image4{
+    background-image: url('image4.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 230px;
+    width: 340px;
+    margin: 2px;
+    margin-right: 20px;
+}
+#image1:hover,#image2:hover,#image3:hover,#image4:hover{
+    cursor: pointer;
+    transform: scale(1.5);
+}
+#about-heading,#character-heading{
+    font-size: 6rem;
+    text-align: center;
+				text-decoration: underline;
+    text-decoration-thickness: 6px;
+    text-underline-offset:10px ;
+    margin-bottom: 50px;
+}
+#plot{
+    margin: 3px;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+.character{
+    font-size: 2rem;
+    display: flex;
+    flex-direction: row;
+    margin: 4px;
+    width: 100vw;
+    justify-content: center;
+}
+.character p{
+    text-align: center;
+    font-size: 3rem;
+}
+#Cimage1 img{
+    height: 400px;
+    width: 250px;
+    margin: 15px;
+}
+#Cimage2 img{
+    height: 400px;
+    width: 250px;
+    margin: 15px;
+}
+#Cimage3 img{
+    height: 400px;
+    width: 250px;
+    margin: 15px;
+}
+#Cimage4 img{
+    height: 400px;
+    width: 250px;
+    margin: 15px;
+}
+#Cimage1:hover,#Cimage2:hover,#Cimage3:hover,#Cimage4:hover{
+    cursor: pointer;
+    opacity: 0;
+    transition: 1s;
+}
+#image1,#image2,#image3,#image4,#Cimage1 img,#Cimage2 img,#Cimage3 img,#Cimage4 img{
+    				box-shadow: 3px 3px 4px #ffffff;
+    }
+
+@media only screen and (max-width:768px){
+    #image1:hover,#image2:hover,#image3:hover,#image4:hover{
+    cursor: pointer;
+    transform: none;
+    }
+    #image1,#image2{
+    				position: relative;
+    				right: 23px;
+    				margin-bottom: 9px;
+    }
+    #image3{
+    				position: relative;
+    				right: 23px;
+    				background-size: 100% 100%;
+    				width: 340px;
+    				height: 200px;
+    				margin-bottom: 9px;
+    }
+    #image4{
+    position: relative;
+    background-size: 100% 100%;
+       width: 340px;
+        height:230px;
+        right: 23px;
+        margin-bottom: 9px;
+    }
+    .pics,.character{
+        flex-direction: column;
+        align-items: center;
+    }
+    #Cimage1,#Cimage2,#Cimage3,#Cimage4{
+    				border-bottom: 2px solid #fff;
+    				margin-bottom: 20px;
+    }
+    
+ 
+}
